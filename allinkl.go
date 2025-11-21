@@ -29,6 +29,12 @@ func (p *Provider) Provision(ctx caddy.Context) error {
 	return nil
 }
 
+// UnmarshalCaddyfile sets up the DNS provider from Caddyfile tokens. Syntax:
+//
+//	allinkl [<username> <password>] {
+//	    kas_username <username>
+//	    kas_password <password>
+//	}
 func (p *Provider) UnmarshalCaddyfile(d *caddyfile.Dispenser) error {
 	for d.Next() {
 		if d.NextArg() {
