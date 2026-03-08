@@ -72,8 +72,8 @@ github.com/kr/pretty v0.1.0/go.mod h1:dAy3ld7l9f0ibDNOQOHHMYYIIbhfbHSm3C4ZsoJORN
 github.com/kr/pty v1.1.1/go.mod h1:pFQYn66WHrOpPYNljwOMqo10TkYh1fy3cYio2l3bCsQ=
 github.com/kr/pty v1.1.3/go.mod h1:pFQYn66WHrOpPYNljwOMqo10TkYh1fy3cYio2l3bCsQ=
 github.com/kr/text v0.1.0/go.mod h1:4Jbv+DJW3UT/LiOwJeYQe1efqtUx/iVham/4vfdArNI=
-github.com/libdns/all-inkl v0.0.0-20251120145607-3d857407353b h1:zASxejYk3MsdvtxlT0/Xtubg0cbfuTIg7xONud+4DQM=
-github.com/libdns/all-inkl v0.0.0-20251120145607-3d857407353b/go.mod h1:dOpXfy9c+qh1xdEsOsghAC0QmnhPc5AjNQbj0jaUr6M=
+github.com/libdns/all-inkl v0.2.2 h1:yMzF5uKzZmy0lctMys/js9h3sspsQ/froJgaXJxdhMw=
+github.com/libdns/all-inkl v0.2.2/go.mod h1:dOpXfy9c+qh1xdEsOsghAC0QmnhPc5AjNQbj0jaUr6M=
 github.com/libdns/libdns v1.1.0 h1:9ze/tWvt7Df6sbhOJRB8jT33GHEHpEQXdtkE3hPthbU=
 github.com/libdns/libdns v1.1.0/go.mod h1:4Bj9+5CQiNMVGf87wjX4CY3HQJypUHRuLvlsfsZqLWQ=
 github.com/lunixbochs/vtclean v1.0.0/go.mod h1:pHhQNgMf3btfWnGBVipUOjRYhoOsdGqdm/+2c2E2WMI=
