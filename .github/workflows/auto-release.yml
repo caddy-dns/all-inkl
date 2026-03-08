@@ -15,12 +15,11 @@ jobs:
         with:
           fetch-depth: 2
 
-      - name: Check if this was a version bump commit
+      - name: Check if this was a version bump
         id: check
         run: |
-          MSG=$(git log -1 --pretty=%s)
-          if echo "$MSG" | grep -qE "^fix: bump libdns/all-inkl to (v[0-9]+\.[0-9]+\.[0-9]+)"; then
-            VERSION=$(echo "$MSG" | grep -oE "v[0-9]+\.[0-9]+\.[0-9]+")
+          VERSION=$(git diff HEAD~1 HEAD -- go.mod | grep "^+.*libdns/all-inkl" | grep -oE "v[0-9]+\.[0-9]+\.[0-9]+" | head -1)
+          if [ -n "$VERSION" ]; then
             echo "is_bump=true" >> $GITHUB_OUTPUT
             echo "version=$VERSION" >> $GITHUB_OUTPUT
           else
