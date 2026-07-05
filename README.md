@@ -50,28 +50,26 @@ tls {
 }
 ```
 
-## Docker example
+## Docker Example
 
-1) Install docker and docker-compose, then run:
+1) Install Docker and Docker Compose, then run:
 ```bash
-apt install docker.io docker-compose
+wget -O - https://get.docker.com | bash
 ```
 
-2) Build the docker image using the provided Dockerfile and build script:
+2) Navigate into the `test-docker` directory:
 
 ```bash
-cd test-docker
-chmod +x build/build.sh
-./build/build.sh
+cd all-inkl/test-docker
 ```
 
-3) Change the name of the `.env.example` to `.env` file to include your all-inkl KAS credentials:
+3) Rename the `.env.example` file to `.env` and add your ALL-INKL KAS credentials.
 
+4) Rename `Caddyfile_Sample` to `Caddyfile`, then edit the `Caddyfile` in the `caddy` directory to configure your desired domains and settings.
 
-4) Edit the `Caddyfile` in the `test-docker/caddy` directory to configure your desired domains and settings.
-
-5) Start the Caddy server with docker-compose:
+5) Build and start the Docker containers using Docker Compose:
 
 ```bash
-docker-compose up -d
+docker compose up --build -d
 ```
+
